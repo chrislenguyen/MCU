@@ -679,19 +679,19 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 15:     while (1) {
 [e :U 504 ]
 {
-"17
-[; ;main.c: 17:         dispatch_task();
+"16
+[; ;main.c: 16:         dispatch_task();
 [e ( _dispatch_task ..  ]
-"19
-[; ;main.c: 19:     }
+"17
+[; ;main.c: 17:     }
 }
 [e :U 503 ]
 [e $U 504  ]
 [e :U 505 ]
-"20
-[; ;main.c: 20:     return;
+"18
+[; ;main.c: 18:     return;
 [e $UE 502  ]
-"21
-[; ;main.c: 21: }
+"19
+[; ;main.c: 19: }
 [e :UE 502 ]
 }

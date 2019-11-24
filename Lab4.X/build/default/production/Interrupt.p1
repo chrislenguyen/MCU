@@ -744,42 +744,28 @@ Version 4.0 HI-TECH Software Intermediate Code
 "9
 [; ;Interrupt.c: 9:         TMR0 = timer0Counter;
 [e = _TMR0 -> _timer0Counter `us ]
-"10
-[; ;Interrupt.c: 10:         test++;
-[e ++ _test -> 1 `i ]
-"11
-[; ;Interrupt.c: 11:         if (test == 250) {
-[e $ ! == _test -> 250 `i 504  ]
-{
-"13
-[; ;Interrupt.c: 13:             test = 0;
-[e = _test -> 0 `i ]
-"14
-[; ;Interrupt.c: 14:         }
-}
-[e :U 504 ]
-"16
-[; ;Interrupt.c: 16:     }
+"15
+[; ;Interrupt.c: 15:     }
 }
 [e :U 503 ]
-"18
-[; ;Interrupt.c: 18:     if (PIE1bits.TMR1IE && PIR1bits.TMR1IF) {
-[e $ ! && != -> . . _PIE1bits 0 0 `i -> 0 `i != -> . . _PIR1bits 0 0 `i -> 0 `i 505  ]
+"17
+[; ;Interrupt.c: 17:     if (PIE1bits.TMR1IE && PIR1bits.TMR1IF) {
+[e $ ! && != -> . . _PIE1bits 0 0 `i -> 0 `i != -> . . _PIR1bits 0 0 `i -> 0 `i 504  ]
 {
-"19
-[; ;Interrupt.c: 19:         PIR1bits.TMR1IF = 0;
+"18
+[; ;Interrupt.c: 18:         PIR1bits.TMR1IF = 0;
 [e = . . _PIR1bits 0 0 -> -> 0 `i `uc ]
-"20
-[; ;Interrupt.c: 20:         TMR1 = timer1Counter;
+"19
+[; ;Interrupt.c: 19:         TMR1 = timer1Counter;
 [e = _TMR1 -> _timer1Counter `us ]
-"21
-[; ;Interrupt.c: 21:         current_time++;
+"20
+[; ;Interrupt.c: 20:         current_time++;
 [e ++ _current_time -> -> 1 `i `ui ]
-"22
-[; ;Interrupt.c: 22:     }
+"21
+[; ;Interrupt.c: 21:     }
 }
-[e :U 505 ]
-"23
-[; ;Interrupt.c: 23: }
+[e :U 504 ]
+"22
+[; ;Interrupt.c: 22: }
 [e :UE 502 ]
 }

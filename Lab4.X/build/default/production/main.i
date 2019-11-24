@@ -8318,9 +8318,7 @@ void Sched_Update(void);
 void main(void) {
     System_init();
     while (1) {
-
         dispatch_task();
-
     }
     return;
 }

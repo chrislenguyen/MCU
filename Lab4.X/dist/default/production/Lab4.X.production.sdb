@@ -48,7 +48,7 @@
 [v ___omul __omul `(uo  1 e 8 0 ]
 "10 /opt/microchip/xc8/v2.10/pic/sources/c99/common/xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]
-"4 /home/lnakhuong/MPLABXProjects/Lab4.X/Driver.c
+"4 /home/lnakhuong/MPLABXProjects/Microprocesser-Microcontroller-191/Lab4.X/Driver.c
 [v _tmr0_init tmr0_init `(v  1 e 1 0 ]
 "10
 [v _tmr1_init tmr1_init `(v  1 e 1 0 ]
@@ -56,9 +56,9 @@
 [v _start_timer start_timer `(v  1 e 1 0 ]
 "29
 [v _timer_ISR timer_ISR `(v  1 e 1 0 ]
-"5 /home/lnakhuong/MPLABXProjects/Lab4.X/Interrupt.c
+"5 /home/lnakhuong/MPLABXProjects/Microprocesser-Microcontroller-191/Lab4.X/Interrupt.c
 [v _ISR ISR `IIH(v  1 e 1 0 ]
-"5 /home/lnakhuong/MPLABXProjects/Lab4.X/Linked_List.c
+"5 /home/lnakhuong/MPLABXProjects/Microprocesser-Microcontroller-191/Lab4.X/Linked_List.c
 [v _init_arr_task init_arr_task `(v  1 e 1 0 ]
 "18
 [v _add_task add_task `(uo  1 e 8 0 ]
@@ -68,9 +68,9 @@
 [v _remove_task remove_task `(v  1 e 1 0 ]
 "139
 [v _dispatch_task dispatch_task `(v  1 e 1 0 ]
-"13 /home/lnakhuong/MPLABXProjects/Lab4.X/main.c
+"13 /home/lnakhuong/MPLABXProjects/Microprocesser-Microcontroller-191/Lab4.X/main.c
 [v _main main `(v  1 e 1 0 ]
-"7 /home/lnakhuong/MPLABXProjects/Lab4.X/System_init.c
+"7 /home/lnakhuong/MPLABXProjects/Microprocesser-Microcontroller-191/Lab4.X/System_init.c
 [v _osc_init osc_init `(v  1 e 1 0 ]
 "11
 [v _init_LED init_LED `(v  1 e 1 0 ]
@@ -84,17 +84,15 @@
 [v _calculate_init_tmr1 calculate_init_tmr1 `(v  1 e 1 0 ]
 "41
 [v _System_init System_init `(v  1 e 1 0 ]
-"4 /home/lnakhuong/MPLABXProjects/Lab4.X/Task.c
+"4 /home/lnakhuong/MPLABXProjects/Microprocesser-Microcontroller-191/Lab4.X/Task.c
 [v _toggle_LED_0 toggle_LED_0 `(v  1 e 1 0 ]
 "12
 [v _toggle_LED_2 toggle_LED_2 `(v  1 e 1 0 ]
 "20
 [v _toggle_LED_4 toggle_LED_4 `(v  1 e 1 0 ]
-"12 /home/lnakhuong/MPLABXProjects/Lab4.X/Driver.h
+"12 /home/lnakhuong/MPLABXProjects/Microprocesser-Microcontroller-191/Lab4.X/Driver.h
 [v _current_time current_time `ui  1 e 2 0 ]
-"50 /home/lnakhuong/MPLABXProjects/Lab4.X/mcc.h
-[v _test test `i  1 e 2 0 ]
-"51
+"51 /home/lnakhuong/MPLABXProjects/Microprocesser-Microcontroller-191/Lab4.X/mcc.h
 [v _list_head list_head `i  1 e 2 0 ]
 "52
 [v _size size `i  1 e 2 0 ]
@@ -208,17 +206,17 @@
 [v _dp_h dp_h `C[2]f  1 s 8 dp_h ]
 "21
 [v _dp_l dp_l `C[2]f  1 s 8 dp_l ]
-"13 /home/lnakhuong/MPLABXProjects/Lab4.X/main.c
+"13 /home/lnakhuong/MPLABXProjects/Microprocesser-Microcontroller-191/Lab4.X/main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"21
+"19
 } 0
-"139 /home/lnakhuong/MPLABXProjects/Lab4.X/Linked_List.c
+"139 /home/lnakhuong/MPLABXProjects/Microprocesser-Microcontroller-191/Lab4.X/Linked_List.c
 [v _dispatch_task dispatch_task `(v  1 e 1 0 ]
 {
 "148
 } 0
-"12 /home/lnakhuong/MPLABXProjects/Lab4.X/Task.c
+"12 /home/lnakhuong/MPLABXProjects/Microprocesser-Microcontroller-191/Lab4.X/Task.c
 [v _toggle_LED_2 toggle_LED_2 `(v  1 e 1 0 ]
 {
 "14
@@ -233,7 +231,7 @@
 {
 "22
 } 0
-"107 /home/lnakhuong/MPLABXProjects/Lab4.X/Linked_List.c
+"107 /home/lnakhuong/MPLABXProjects/Microprocesser-Microcontroller-191/Lab4.X/Linked_List.c
 [v _remove_task remove_task `(v  1 e 1 0 ]
 {
 "121
@@ -248,12 +246,12 @@
 [v remove_task@id id `ul  1 p 4 26 ]
 "137
 } 0
-"41 /home/lnakhuong/MPLABXProjects/Lab4.X/System_init.c
+"41 /home/lnakhuong/MPLABXProjects/Microprocesser-Microcontroller-191/Lab4.X/System_init.c
 [v _System_init System_init `(v  1 e 1 0 ]
 {
 "53
 } 0
-"16 /home/lnakhuong/MPLABXProjects/Lab4.X/Driver.c
+"16 /home/lnakhuong/MPLABXProjects/Microprocesser-Microcontroller-191/Lab4.X/Driver.c
 [v _start_timer start_timer `(v  1 e 1 0 ]
 {
 [v start_timer@timer_opt timer_opt `ui  1 p 2 20 ]
@@ -269,7 +267,7 @@
 {
 "8
 } 0
-"7 /home/lnakhuong/MPLABXProjects/Lab4.X/System_init.c
+"7 /home/lnakhuong/MPLABXProjects/Microprocesser-Microcontroller-191/Lab4.X/System_init.c
 [v _osc_init osc_init `(v  1 e 1 0 ]
 {
 "9
@@ -284,7 +282,7 @@
 {
 "27
 } 0
-"18 /home/lnakhuong/MPLABXProjects/Lab4.X/Linked_List.c
+"18 /home/lnakhuong/MPLABXProjects/Microprocesser-Microcontroller-191/Lab4.X/Linked_List.c
 [v _add_task add_task `(uo  1 e 8 0 ]
 {
 "77
@@ -320,7 +318,7 @@
 [v ___wmul@multiplicand multiplicand `ui  1 p 2 22 ]
 "53
 } 0
-"11 /home/lnakhuong/MPLABXProjects/Lab4.X/System_init.c
+"11 /home/lnakhuong/MPLABXProjects/Microprocesser-Microcontroller-191/Lab4.X/System_init.c
 [v _init_LED init_LED `(v  1 e 1 0 ]
 {
 "14
@@ -563,17 +561,17 @@
 [v ___fltol@f1 f1 `d  1 p 4 108 ]
 "70
 } 0
-"5 /home/lnakhuong/MPLABXProjects/Lab4.X/Interrupt.c
+"5 /home/lnakhuong/MPLABXProjects/Microprocesser-Microcontroller-191/Lab4.X/Interrupt.c
 [v _ISR ISR `IIH(v  1 e 1 0 ]
 {
-"23
+"22
 } 0
-"29 /home/lnakhuong/MPLABXProjects/Lab4.X/Driver.c
+"29 /home/lnakhuong/MPLABXProjects/Microprocesser-Microcontroller-191/Lab4.X/Driver.c
 [v _timer_ISR timer_ISR `(v  1 e 1 0 ]
 {
 "31
 } 0
-"93 /home/lnakhuong/MPLABXProjects/Lab4.X/Linked_List.c
+"93 /home/lnakhuong/MPLABXProjects/Microprocesser-Microcontroller-191/Lab4.X/Linked_List.c
 [v _Sched_Update Sched_Update `(v  1 e 1 0 ]
 {
 "98

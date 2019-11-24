@@ -8313,11 +8313,10 @@ void __attribute__((picinterrupt(("")))) ISR(void) {
         timer_ISR();
         INTCONbits.TMR0IF = 0;
         TMR0 = timer0Counter;
-        test++;
-        if (test == 250) {
 
-            test = 0;
-        }
+
+
+
 
     }
 

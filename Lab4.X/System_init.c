@@ -20,10 +20,10 @@ void interrupt_init() {
 
 void init_task() {
     //add_task(0, 700, toggle_LED_2, 0);
-    add_task(0, 500, toggle_LED_0, 0);
+    add_task(0, 1000, toggle_LED_0, 0);
     //add_task(1000, 0, toggle_LED_0, 0);
-    add_task(110, 700, toggle_LED_2, 0);
-    add_task(250, 600, toggle_LED_4, 0);
+    add_task(0, 2000, toggle_LED_2, 0);
+    add_task(0, 3000, toggle_LED_4, 0);
 }
 
 void calculate_init_tmr0() {

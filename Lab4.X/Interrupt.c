@@ -7,12 +7,11 @@ void __interrupt() ISR(void) {
         timer_ISR();
         INTCONbits.TMR0IF = 0;
         TMR0 = timer0Counter;
-        test++;
-        if (test == 250) {
-            //if (arr_task[0].next == -1) toggle_LED_7();
-            test = 0;
-        }
-        
+//        test++;
+//        if (test == 250) {
+//            if (arr_task[0].next == -1) toggle_LED_7();
+//            test = 0;
+//        }
     }    
     
     if (PIE1bits.TMR1IE && PIR1bits.TMR1IF) {

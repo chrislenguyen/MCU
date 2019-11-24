@@ -767,14 +767,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U _init_task ]
 [f ]
 "23
-[; ;System_init.c: 23:     add_task(0, 500, toggle_LED_0, 0);
-[e ( _add_task (4 , , , -> -> -> 0 `i `o `uo -> -> -> 500 `i `o `uo &U _toggle_LED_0 -> -> 0 `i `*v ]
+[; ;System_init.c: 23:     add_task(0, 1000, toggle_LED_0, 0);
+[e ( _add_task (4 , , , -> -> -> 0 `i `o `uo -> -> -> 1000 `i `o `uo &U _toggle_LED_0 -> -> 0 `i `*v ]
 "25
-[; ;System_init.c: 25:     add_task(110, 700, toggle_LED_2, 0);
-[e ( _add_task (4 , , , -> -> -> 110 `i `o `uo -> -> -> 700 `i `o `uo &U _toggle_LED_2 -> -> 0 `i `*v ]
+[; ;System_init.c: 25:     add_task(0, 2000, toggle_LED_2, 0);
+[e ( _add_task (4 , , , -> -> -> 0 `i `o `uo -> -> -> 2000 `i `o `uo &U _toggle_LED_2 -> -> 0 `i `*v ]
 "26
-[; ;System_init.c: 26:     add_task(250, 600, toggle_LED_4, 0);
-[e ( _add_task (4 , , , -> -> -> 250 `i `o `uo -> -> -> 600 `i `o `uo &U _toggle_LED_4 -> -> 0 `i `*v ]
+[; ;System_init.c: 26:     add_task(0, 3000, toggle_LED_4, 0);
+[e ( _add_task (4 , , , -> -> -> 0 `i `o `uo -> -> -> 3000 `i `o `uo &U _toggle_LED_4 -> -> 0 `i `*v ]
 "27
 [; ;System_init.c: 27: }
 [e :UE 505 ]
