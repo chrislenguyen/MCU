@@ -15,6 +15,7 @@
 #include "LTD.h"
 #include "Interrupt.h"
 #include "dht11.h"
+#include "Read_Button.h"
 
     // PRAGMA
 #ifdef _18F8722
@@ -30,14 +31,14 @@
 #endif
 
 #define INTERRUPT_TIME 10
-#define ROUTINE_TIME 4000/INTERRUPT_TIME
+#define ROUTINE_TIME 3000/INTERRUPT_TIME
 #define TIMEOUT 10000/INTERRUPT_TIME
-#define IDLE 0
-#define HEATER 1
-#define HEAT_PUMP 2
-#define MAX_TEMP 90
-#define MAX_HUMID 50
-#define MIN_HUMID 10
+#define MIN_HUMID 100 - max_humid
+#define SET_TEMP 0
+#define SET_HUMID 1
+#define IDLE 2
+#define HEATER 3
+#define HEAT_PUMP 4
 #define RESET_TIMEOUT time_out_counter = 0
 #define HEATER_ON LATD7 = 1
 #define HEATER_OFF LATD7 = 0
@@ -52,17 +53,27 @@
 
 typedef long long int int64;
 
-int test = 0;
-
-char state;
+char state = 0;
+char firstReadRA5 = 1;
+char secondReadRA5 = 1;
+char firstReadRB0 = 1;
+char secondReadRB0 = 1;
+int max_temp = 0;
+int max_humid = 0;
 int state_flag = 0;
 int heater_flag = 0;
 int timeout_flag = 0;
 int LCD_flag = 0;
 int temp = 0;
 int humid = 0;
+int count_LCD = 0;
+int count_RB0 = 0;
+int RB0_flag = 0;
+int count_RA5 = 0;
+int RA5_flag = 0;
+
 int64 timerCounter = 0;
-int64 routine_time = 0;
+int64 routine_counter = 0;
 int64 time_out_counter = 0;
 
 void system_init();

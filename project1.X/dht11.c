@@ -82,15 +82,31 @@ int readDHT (void) {
 }
 
 void readTempAndHumid (void) {
-    //LCDPutInst(0x88);
-    //LCDPutStr("OK");
     int check = readDHT();
-    if (check == 0) {
-        temp = ERROR;
-        humid = ERROR;
-        error = 1;
-    } else {
+//    if (check == 0) {
+//        temp = ERROR;
+//        humid = ERROR;
+//        error = 1;
+//    } else {
         temp = (int)dhtData[2];
         humid = (int)dhtData[0];
-    }
+//    }
+}
+
+void printData() {
+    mCURSOR_LINE1;
+    LCDPutChar('T');
+    LCDPutChar(':');
+    LCDPutChar(temp/10 +'0');
+    LCDPutChar(temp%10 +'0');
+    LCDPutChar(' ');
+    LCDPutChar(' ');
+    LCDPutChar(' ');
+    LCDPutChar(' ');
+    LCDPutChar(' ');
+    mCURSOR_LINE2;
+    LCDPutChar('H');
+    LCDPutChar(':');
+    LCDPutChar(humid/10 +'0');
+    LCDPutChar(humid%10 +'0');
 }

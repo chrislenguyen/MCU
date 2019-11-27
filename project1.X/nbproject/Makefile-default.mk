@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=System_Init.c LTD.c Interrupt.c main.c LCD.c dht11.c
+SOURCEFILES_QUOTED_IF_SPACED=System_Init.c LTD.c Interrupt.c main.c LCD.c dht11.c Read_Button.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/System_Init.p1 ${OBJECTDIR}/LTD.p1 ${OBJECTDIR}/Interrupt.p1 ${OBJECTDIR}/main.p1 ${OBJECTDIR}/LCD.p1 ${OBJECTDIR}/dht11.p1
-POSSIBLE_DEPFILES=${OBJECTDIR}/System_Init.p1.d ${OBJECTDIR}/LTD.p1.d ${OBJECTDIR}/Interrupt.p1.d ${OBJECTDIR}/main.p1.d ${OBJECTDIR}/LCD.p1.d ${OBJECTDIR}/dht11.p1.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/System_Init.p1 ${OBJECTDIR}/LTD.p1 ${OBJECTDIR}/Interrupt.p1 ${OBJECTDIR}/main.p1 ${OBJECTDIR}/LCD.p1 ${OBJECTDIR}/dht11.p1 ${OBJECTDIR}/Read_Button.p1
+POSSIBLE_DEPFILES=${OBJECTDIR}/System_Init.p1.d ${OBJECTDIR}/LTD.p1.d ${OBJECTDIR}/Interrupt.p1.d ${OBJECTDIR}/main.p1.d ${OBJECTDIR}/LCD.p1.d ${OBJECTDIR}/dht11.p1.d ${OBJECTDIR}/Read_Button.p1.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/System_Init.p1 ${OBJECTDIR}/LTD.p1 ${OBJECTDIR}/Interrupt.p1 ${OBJECTDIR}/main.p1 ${OBJECTDIR}/LCD.p1 ${OBJECTDIR}/dht11.p1
+OBJECTFILES=${OBJECTDIR}/System_Init.p1 ${OBJECTDIR}/LTD.p1 ${OBJECTDIR}/Interrupt.p1 ${OBJECTDIR}/main.p1 ${OBJECTDIR}/LCD.p1 ${OBJECTDIR}/dht11.p1 ${OBJECTDIR}/Read_Button.p1
 
 # Source Files
-SOURCEFILES=System_Init.c LTD.c Interrupt.c main.c LCD.c dht11.c
+SOURCEFILES=System_Init.c LTD.c Interrupt.c main.c LCD.c dht11.c Read_Button.c
 
 
 
@@ -142,6 +142,14 @@ ${OBJECTDIR}/dht11.p1: dht11.c  nbproject/Makefile-${CND_CONF}.mk
 	@-${MV} ${OBJECTDIR}/dht11.d ${OBJECTDIR}/dht11.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/dht11.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
+${OBJECTDIR}/Read_Button.p1: Read_Button.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/Read_Button.p1.d 
+	@${RM} ${OBJECTDIR}/Read_Button.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1  -fno-short-double -fno-short-float -memi=wordwrite -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/Read_Button.p1 Read_Button.c 
+	@-${MV} ${OBJECTDIR}/Read_Button.d ${OBJECTDIR}/Read_Button.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/Read_Button.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
 else
 ${OBJECTDIR}/System_Init.p1: System_Init.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
@@ -190,6 +198,14 @@ ${OBJECTDIR}/dht11.p1: dht11.c  nbproject/Makefile-${CND_CONF}.mk
 	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -fno-short-double -fno-short-float -memi=wordwrite -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/dht11.p1 dht11.c 
 	@-${MV} ${OBJECTDIR}/dht11.d ${OBJECTDIR}/dht11.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/dht11.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
+${OBJECTDIR}/Read_Button.p1: Read_Button.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/Read_Button.p1.d 
+	@${RM} ${OBJECTDIR}/Read_Button.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -fno-short-double -fno-short-float -memi=wordwrite -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/Read_Button.p1 Read_Button.c 
+	@-${MV} ${OBJECTDIR}/Read_Button.d ${OBJECTDIR}/Read_Button.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/Read_Button.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
 endif
 

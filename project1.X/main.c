@@ -12,12 +12,16 @@ void main(void) {
     system_init();
     while (1) {
         switch (state) {
+            case SET_TEMP: Set_Temp();
+            break;
+            case SET_HUMID: Set_Humid();
+            break;
             case IDLE: Idle();
-                break;
+            break;
             case HEATER: Heater();
-                break;
+            break;
             case HEAT_PUMP: Heat_Pump();
-                break;
+            break;
         }
     }
     return;

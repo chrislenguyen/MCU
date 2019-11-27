@@ -8,6 +8,8 @@
 #ifndef LTD_H
 #define	LTD_H
 
+void Set_Temp();
+void Set_Humid();
 void Idle();
 void Heater();
 void Heat_Pump();

@@ -1,6 +1,12 @@
 #include "mcc.h"
 #include "LCD.h"
 
+//void init_pin() {
+//    
+//    LATB = 0x00;
+//    TRISB = 0xFF;
+//}
+
 void init_osc() {
     OSCCON = 0x70;
 }
@@ -11,7 +17,11 @@ void init_LED() {
 }
 
 void init_input (void) {
-    TRISA = 0x00;
+    LATA = 0x00;
+    TRISA = 0xF3;
+
+    LATB = 0x00;
+    TRISB = 0xFF;
     ADCON1 = 0b00001111;
 }
 
@@ -33,6 +43,7 @@ void calculate_init_tmr() {
 
 void system_init() {
     init_osc();
+    //init_pin();
     init_tmr0();
     init_interrupt();
     calculate_init_tmr();
